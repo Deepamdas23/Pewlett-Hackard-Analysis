@@ -29,7 +29,7 @@ FROM unique_titles as ut
 GROUP BY ut.title
 ORDER BY COUNT (ut.title) DESC;
 
---Table with mentorish-eligibility employees
+--Table with mentorship-eligibility employees
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
        e.first_name,
        e.last_name,
